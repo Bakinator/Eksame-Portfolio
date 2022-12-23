@@ -1,0 +1,466 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+:root{
+	--bg-color: #fe9844;
+	--second-bg-color: #1d4956;
+	--third-bg-color: #8ea4ab;
+	--fourth-bg-color: #205c1e;
+	--text-color: #fff;
+	--second-color: #f4f4f4;
+	--main-color: #51e64c;
+	--big-font: 3.5em;
+	--h2-font: 2.5rem;
+	--h3-font: 2rem;
+	--p-font: 1.5rem;
+}
+
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 22px 15%;
+	border-bottom: 1px solid transparent;
+	transition: all .45s ease;
+}
+.navlist{
+	display: flex;
+
+}
+.navlist a{
+	color: var(--second-color);
+	font-size: 17px;
+	font-weight: 500;
+	margin: 0 25px;
+	transition: all .45s ease;
+}
+
+section{
+	padding: 160px 15% 120px;
+}
+.home{
+	position: relative;
+	height: 100vh;
+	width: 90%;
+	background-image: url(pictures/copy-space-headphones-laptop-air-concept.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: auto;
+}
+
+.home-text h1{
+	font-size: var(--big-font);
+	font-weight: 700;
+	color: var(--text-color);
+	line-height: 1.1;
+	margin: 0 0 5px;
+}
+.home-text h3{
+	color: var(--text-color);
+	margin: 0 0 35px;
+	font-size: var(--h3-font);
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.home-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 40px;
+}
+
+header.sticky{
+	background: var(--bg-color);
+	border-bottom: 1px solid #ffffff1a;
+	padding: 12px 15%;
+}
+
+.about{
+	background: var(--second-bg-color);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+	width: 90%;
+	margin: auto;
+}
+.about-img img{
+	max-width: 530px;
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+}
+.about-text h2{
+	font-size: var(--h2-font);
+	line-height: 1;
+	margin: 0 0 40px;
+}
+.about-text h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--text-color);
+	line-height: 1.7;
+	margin: 150px 0 30px;
+}
+.about-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 4rem;
+}
+
+.projects {
+	background: var(--third-bg-color);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 8rem;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .projects h2 {
+	font-size: var(--h2-font);
+	text-align: center;
+  }
+
+  /*.project-text p {
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin: 0;
+	text-align: center;
+  }*/
+  
+  .audio {
+	margin: auto;
+	max-width: 100px;
+  }
+  .audio-img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  .audio img,
+  .pixel img,
+  .icons img,
+  .character img {
+	max-width: 530px;
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+	margin: auto;
+  }
+
+  .pixel{
+	width: 400px;
+	height: 720px;
+	background: url(animations/pixel-run.jpg) 0 0 no-repeat;
+	animation: play .8s steps(6) infinite;
+}
+
+/*.projects-audio-img img{
+	max-width: 530px;
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.projects-audio{
+	margin: auto;
+}
+
+}
+.projects-text h4{
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--text-color);
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+*/
+
+footer{
+	background: var(--fourth-bg-color);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2.5rem;
+	width: 100%;
+	margin: auto;
+}
+.footer-text h2{
+	font-size: var(--h2-font);
+	color: var(--second-color);
+	line-height: 1;
+	margin: 0 0 20px;
+}
+.footer-text h3{
+	font-size: var(--h3-font);
+	color: var(--second-color	);
+	line-height: 1;
+	margin: 0 0 20px;
+}
+.footer-text p{
+	color: var(--second-color);
+	font-size: var(--p-font);
+	line-height: 1.8;
+	margin-bottom: 10px;
+}
+
+@keyframes play{
+	0%{background-position: 0px;}
+	100%{background-position: -3000px;}
+}
+
+@media (max-width: 1480px){
+	header{
+		padding: 12px 2.5%;
+		transition: .1s;
+	}
+	header.sticky{
+		padding: 10px 2.5%;
+		transition: .1s;;
+	}
+	section{
+		padding: 110px 3% 60px;
+	}
+	.end{
+		padding: 15px 3%;
+	}
+}
+
+@media (max-width: 1100px){
+	:root{
+		--big-font: 4rem;
+	  --h2-font: 2.5rem;
+	  --p-font: 1rem;
+	  transition: .1s;
+	}
+	.home-text h3{
+		font-size: 2.5rem;
+	}
+	.home{
+		height: 87vh;
+	}
+}
+
+@media (max-width: 920px){
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+		order: 2;
+	}
+	.about-img img{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 920px){
+	.projects{
+		grid-template-columns: 1fr;
+	}
+	.audio-img{
+		text-align: center;
+		order: 2;
+	}
+	.audio-img img{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.icons-img{
+		text-align: center;
+		order: 2;
+	}
+	.icons-img img{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	
+	.character-img{
+		text-align: center;
+		order: 2;
+	}
+	.character-img img{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 840px){
+	#menu-icon{
+		display: block;
+	}
+	.navlist{
+		position: absolute;
+		top: -1000px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: var(--bg-color);
+		text-align: left;
+		transition: all .45s ease;
+	}
+	.navlist a{
+		display: block;
+		margin: 17px;
+		font-size: 20px;
+		transition: all .45s ease;
+		color: var(--text-color);
+	}
+	.navlist a:hover{
+		color: var(--main-color);
+	}
+	.navlist a.active{
+		color: var(--text-color);
+	}
+	.navlist.open{
+		top: 100%;
+	}
+}
+
+/*@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes turnIntoPage {
+    0% {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: orangered;
+    }
+    
+    100% {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      background-color:transparent;
+    }
+    
+  }
+
+  .ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: orangered;
+    animation: bounce 1s ease-in-out 4, turnIntoPage 5s ease-in-out forwards;
+    animation-delay: 0s, 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  /*didn't work as intended*/
+  
+/* button {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    font-size: 1em;
+    border: 1px solid red;
+    letter-spacing: 2px;
+    color: #fff;
+    background: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+  }
+
+  button:hover {
+    background: red url(https://postimg.cc/PLqyhKnf);
+    transition-delay: 0.8s;
+    background-size: 200px;
+    animation: animate 0.8s steps(8) forwards;
+  }
+
+  @keyframes animate {
+    0%{
+        background-position-y: 0;
+    }
+
+    100% {
+        background-position-y: -480px;
+    }
+  }*/
+
+/* don't know why this didnt work*/
+/*.soccer-ball {
+    position: relative;
+    left: 700px;
+    top: 400px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+}
+
+.soccer-ball::before,
+.soccer-ball::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: black;
+}
+
+.soccer-ball::before{
+    transform: rotate(60deg); translate:(25%, 25%);
+}
+
+.soccer-ball::after{
+    transform: rotate(-60deg); translate: (25%, 25%);
+}
